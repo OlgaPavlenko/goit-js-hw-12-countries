@@ -1,0 +1,16 @@
+<div>
+    <h1>{{name}}</h1>
+    <div class='flex-container'>
+        <ul class="container">
+            <li><span>Capital:</span> {{capital}}</li>
+            <li><span>Population:</span> {{population}}</li>
+            <ul class='without-padding'><span>Languages:</span>
+                {{#each languages}}
+                <li class='markered-list'>{{name}}</li>
+                {{/each}}
+            </ul>
+        </ul>
+        <div class="right-side">
+            <img src='{{flag}}' width="350" alt="{{name}}"></img>
+        </div>
+    </div>
